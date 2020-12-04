@@ -1,8 +1,9 @@
 # cs_checker
 
 Compilation:
+```
 gcc -Werror -Wall -Wextra -stdc=99 -pedantic checker.c -o checker
-
+```
 Extra: Rajouter une fonction en shell permettant de le lancer de n'importe ou
 ```
 RED="\033[1;31m"                                                                
@@ -10,7 +11,7 @@ GREEN="\033[1;32m"
 NOCOLOR="\033[0m"                                                               
                                                                                  
 function check () {                                                             
-    cp ~/Documents/projet_perso/cs_checker/checker .                            
+    cp whereyousavethisrepo .                            
     ./checker "$1" 1> tmp                                                       
     fail="$?"                                                                   
     if [ ${fail} -eq 1 ]; then                                                  
