@@ -4,6 +4,7 @@ Compilation:
 gcc -Werror -Wall -Wextra -stdc=99 -pedantic checker.c -o checker
 
 Extra: Rajouter une fonction en shell permettant de le lancer de n'importe ou
+```
 RED="\033[1;31m"                                                                
 GREEN="\033[1;32m"                                                              
 NOCOLOR="\033[0m"                                                               
@@ -30,3 +31,4 @@ function check () {
     fi                                                                          
     rm checker tmp                                                              
  }
+```
